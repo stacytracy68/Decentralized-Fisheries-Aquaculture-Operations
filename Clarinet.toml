@@ -1,0 +1,24 @@
+[project]
+name = 'Decentralized-Fisheries-Aquaculture-Operations'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.feed-tracking]
+path = 'contracts/feed-tracking.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.fish-farm-verification]
+path = 'contracts/fish-farm-verification.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
